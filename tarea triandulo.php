@@ -33,7 +33,7 @@
     }
   
     public function perimetro($base,$altura){ // método perimetro 
-        $perimetro = ($base*2)+($altura*2);
+        $perimetro = (($base)*($altura))/2;
         return $perimetro;
     }
     
