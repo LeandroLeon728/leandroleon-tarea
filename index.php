@@ -1,8 +1,8 @@
 <?php
+include ("includes/class.triangulo"); 
+$truangulo = new Ctriangulo(); // 
+print_r($triangulo->get_formulario()); 
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+if(isset($_POST[guardar])){
+    echo "el area del truangulo es igual a ". $triangulo->area($_POST['base'], $_POST['altura']);
+}
